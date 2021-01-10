@@ -3,7 +3,8 @@ version: '3.5'
 
 services:
     client:
-        image: nginx
+        image: nginx:1.19.6-alpine
+        # image: nginx
         # map container port 80 to internet port 84.
         ports:
             - 84:80
