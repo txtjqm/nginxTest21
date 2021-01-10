@@ -1,0 +1,11 @@
+version: '3.5'
+# version: "3"
+
+services:
+    client:
+        image: nginx
+        # map container port 80 to internet port 84.
+        ports:
+            - 84:80
+        volumes:
+            - ./src:/usr/share/nginx/html
